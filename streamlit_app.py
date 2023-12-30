@@ -1,24 +1,31 @@
 import streamlit as st
 from st_functions import st_button, load_css
 from PIL import Image
+from datetime import datetime
 
 load_css()
 
-st.write("[![Star](https://img.shields.io/github/stars/dataprofessor/links.svg?logo=github&style=social)](https://gitHub.com/dataprofessor/links)")
-
 col1, col2, col3 = st.columns(3)
-col2.image(Image.open('dp.png'))
+col2.image(Image.open('profile.png'))
 
-st.header('Chanin Nantasenamat, Ph.D.')
+st.header('Ingrid Stevens')
 
-st.info('Developer Advocate, Content Creator and ex-Professor with an interest in Data Science and Bioinformatics')
+st.info('Data and AI Enthusiast: passionate about using and building with open source models (esp. on Apple Silicon) and sharing what I learn with others!')
 
 icon_size = 20
 
-st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
-st_button('youtube', 'https://youtube.com/codingprofessor', 'Coding Professor YouTube channel', icon_size)
-st_button('medium', 'https://data-professor.medium.com/', 'Read my Blogs', icon_size)
-st_button('twitter', 'https://twitter.com/thedataprof/', 'Follow me on Twitter', icon_size)
-st_button('linkedin', 'https://www.linkedin.com/in/chanin-nantasenamat/', 'Follow me on LinkedIn', icon_size)
-st_button('newsletter', 'https://sendfox.com/dataprofessor/', 'Sign up for my Newsletter', icon_size)
-st_button('cup', 'https://www.buymeacoffee.com/dataprofessor/', 'Buy me a Coffee', icon_size)
+
+st_button('medium', 'https://medium.com/@ingridwickstevens', 'Read my Articles on Medium', icon_size)
+
+st_button('linkedin', 'https://www.linkedin.com/in/ingridwstevens/', 'Connect with me on LinkedIn', icon_size)
+
+st_button('github', 'https://github.com/ingridstevens', 'See what I\'m up to on GitHub', icon_size)
+
+# st_button('cup', 'https://www.buymeacoffee.com/ingridstevens', 'Buy me a Coffee', icon_size)
+
+
+
+st.markdown("---")
+# Footer with auto-updated year
+current_year = datetime.now().year
+# st.markdown(f"© {current_year} Ingrid Stevens. All rights reserved.")
