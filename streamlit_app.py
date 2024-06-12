@@ -21,9 +21,6 @@ st_button('linkedin', 'https://www.linkedin.com/in/ingridwstevens/', 'Connect wi
 
 st_button('github', 'https://github.com/ingridstevens', 'See what I\'m up to on GitHub', icon_size)
 
-st_button('cup', 'https://www.buymeacoffee.com/ingridstevens', 'Buy me a Coffee (❤️ thanks!)', icon_size)
-
-
 
 st.markdown("---")
 # Footer with auto-updated year
